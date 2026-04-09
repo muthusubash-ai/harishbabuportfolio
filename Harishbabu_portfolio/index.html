@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Harishbabu — Creative Graphic Designer & Motion Artist. Specializing in visual design, branding, and video editing using Adobe Creative Suite.">
+  <meta name="keywords" content="graphic designer, portfolio, video editor, motion graphics, Harishbabu, Adobe Photoshop, Illustrator, Premiere Pro, After Effects">
+  <meta name="author" content="Harishbabu">
+  <title>HARISHBABU — Graphic Designer & Motion Artist</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>◆</text></svg>">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Loading Screen -->
+  <div class="loader" id="loader">
+    <div class="loader-text">HARISHBABU</div>
+  </div>
+
+  <!-- Custom Cursor -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close lightbox">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="18" y1="6" x2="6" y2="18"></line>
+        <line x1="6" y1="6" x2="18" y2="18"></line>
+      </svg>
+    </button>
+    <div class="lightbox-content" id="lightboxContent"></div>
+  </div>
+
+  <!-- ========== NAVIGATION ========== -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#hero" class="nav-logo">HB</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#portfolio">Work</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Navigation Overlay -->
+  <div class="mobile-nav" id="mobileNav">
+    <ul class="mobile-nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#portfolio">Work</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- ========== HERO SECTION ========== -->
+  <section class="hero" id="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <!-- Left: Content -->
+        <div class="hero-content">
+          <div class="hero-tag">
+            <span>Creative Designer</span>
+          </div>
+          <h1 class="hero-name">
+            HARISH<br><span class="outline">BABU</span>
+          </h1>
+          <p class="hero-title">Graphic Designer & Motion Artist</p>
+          <p class="hero-desc">
+            Crafting visual stories through bold design and captivating motion. 
+            Turning ideas into powerful visual experiences that leave lasting impressions.
+          </p>
+          <div class="hero-cta">
+            <a href="#portfolio" class="btn-primary">
+              <span>View Work</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="#contact" class="btn-outline">
+              <span>Get in Touch</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right: Profile Image -->
+        <div class="hero-image-wrapper">
+          <div class="hero-image-frame">
+            <img src="assets/images/profile.jpg" alt="Harishbabu — Graphic Designer & Motion Artist" id="heroProfileImg">
+            <span class="hero-image-label">HB</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll Indicator -->
+    <div class="scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ========== MARQUEE ========== -->
+  <div class="marquee-section">
+    <div class="marquee-track">
+      <div class="marquee-item">PHOTOSHOP <span class="dot"></span></div>
+      <div class="marquee-item">ILLUSTRATOR <span class="dot"></span></div>
+      <div class="marquee-item">PREMIERE PRO <span class="dot"></span></div>
+      <div class="marquee-item">AFTER EFFECTS <span class="dot"></span></div>
+      <div class="marquee-item">CANVA <span class="dot"></span></div>
+      <div class="marquee-item">MOTION GRAPHICS <span class="dot"></span></div>
+      <!-- Duplicate for seamless loop -->
+      <div class="marquee-item">PHOTOSHOP <span class="dot"></span></div>
+      <div class="marquee-item">ILLUSTRATOR <span class="dot"></span></div>
+      <div class="marquee-item">PREMIERE PRO <span class="dot"></span></div>
+      <div class="marquee-item">AFTER EFFECTS <span class="dot"></span></div>
+      <div class="marquee-item">CANVA <span class="dot"></span></div>
+      <div class="marquee-item">MOTION GRAPHICS <span class="dot"></span></div>
+    </div>
+  </div>
+
+  <!-- ========== ABOUT SECTION ========== -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">Who I Am</div>
+        <h2 class="section-title">About <span class="accent">Me</span></h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text reveal-left">
+          <p>
+            Passionate graphic designer and motion artist with a keen eye for aesthetics and storytelling. 
+            I specialize in creating visually compelling designs—from stunning posters and brand identities 
+            to dynamic video content and motion graphics that bring ideas to life.
+          </p>
+          <p>
+            With expertise across the Adobe Creative Suite and modern design tools, I transform concepts 
+            into polished visual experiences. Whether it's a bold poster, a sleek social media campaign, 
+            or a cinematic video edit, I bring creativity and precision to every project.
+          </p>
+          <p>
+            My approach combines clean aesthetics with bold creativity, ensuring each piece not only 
+            looks exceptional but also communicates its message with impact and clarity.
+          </p>
+        </div>
+
+        <div class="about-stats reveal-right">
+          <div class="stat-item">
+            <div class="stat-number" data-count="50" data-suffix="+">0</div>
+            <div class="stat-label">Projects Completed</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" data-count="30" data-suffix="+">0</div>
+            <div class="stat-label">Happy Clients</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" data-count="5" data-suffix="">0</div>
+            <div class="stat-label">Tools Mastered</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" data-count="2" data-suffix="+">0</div>
+            <div class="stat-label">Years Experience</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SKILLS SECTION ========== -->
+  <section class="skills" id="skills">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">What I Do</div>
+        <h2 class="section-title">My <span class="accent">Skills</span></h2>
+      </div>
+
+      <div class="skills-grid">
+        <!-- Design Skills -->
+        <div class="skill-category reveal delay-1">
+          <div class="skill-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 19l7-7 3 3-7 7-3-3z"></path>
+              <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path>
+              <path d="M2 2l7.586 7.586"></path>
+              <circle cx="11" cy="11" r="2"></circle>
+            </svg>
+          </div>
+          <h3 class="skill-category-title">DESIGNING</h3>
+          <p class="skill-category-desc">
+            Creating visually stunning graphics, posters, brand identities, and marketing materials 
+            that captivate audiences and communicate powerful messages.
+          </p>
+          <div class="skill-tools">
+            <span class="skill-tool">Adobe Photoshop</span>
+            <span class="skill-tool">Adobe Illustrator</span>
+            <span class="skill-tool">Canva</span>
+          </div>
+        </div>
+
+        <!-- Video Editing Skills -->
+        <div class="skill-category reveal delay-2">
+          <div class="skill-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="23 7 16 12 23 17 23 7"></polygon>
+              <rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect>
+            </svg>
+          </div>
+          <h3 class="skill-category-title">VIDEO EDITING & MOTION GRAPHICS</h3>
+          <p class="skill-category-desc">
+            Producing dynamic video content and motion graphics with seamless transitions, 
+            cinematic color grading, and engaging visual effects that tell compelling stories.
+          </p>
+          <div class="skill-tools">
+            <span class="skill-tool">Adobe Premiere Pro</span>
+            <span class="skill-tool">Adobe After Effects</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PORTFOLIO SECTION ========== -->
+  <section class="portfolio" id="portfolio">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">Selected Work</div>
+        <h2 class="section-title">My <span class="accent">Portfolio</span></h2>
+      </div>
+
+      <!-- Filters -->
+      <div class="portfolio-filters reveal">
+        <button class="filter-btn active" data-filter="all" id="filterAll">All</button>
+        <button class="filter-btn" data-filter="design" id="filterDesign">Design</button>
+        <button class="filter-btn" data-filter="video" id="filterVideo">Video & Motion</button>
+      </div>
+
+      <!-- Portfolio Grid -->
+      <div class="portfolio-grid" id="portfolioGrid">
+
+        <!-- Row 1 -->
+        <!-- Poster 1: Burger Ad Poster -->
+        <div class="portfolio-item reveal-scale" data-category="design" id="work-1">
+          <img src="assets/images/poster1.jpg" alt="Super Delicious Burger — Food Poster Design">
+          <div class="portfolio-overlay">
+            <span class="portfolio-item-tag">Poster Design</span>
+            <h3 class="portfolio-item-title">Burger Ad Poster</h3>
+            <p class="portfolio-item-desc">Food brand promotional poster design</p>
+          </div>
+        </div>
+
+        <!-- Poster 2: Digital Marketing Agency -->
+        <div class="portfolio-item reveal-scale delay-1" data-category="design" id="work-2">
+          <img src="assets/images/poster2.jpg" alt="Digital Marketing Agency — Corporate Poster Design">
+          <div class="portfolio-overlay">
+            <span class="portfolio-item-tag">Poster Design</span>
+            <h3 class="portfolio-item-title">Digital Agency Poster</h3>
+            <p class="portfolio-item-desc">Corporate marketing visual design</p>
+          </div>
+        </div>
+
+        <!-- Poster 3: Caramel Coffee -->
+        <div class="portfolio-item reveal-scale delay-2" data-category="design" id="work-3">
+          <img src="assets/images/poster3.jpg" alt="Caramel Coffee — Beverage Poster Design">
+          <div class="portfolio-overlay">
+            <span class="portfolio-item-tag">Poster Design</span>
+            <h3 class="portfolio-item-title">Coffee Ad Poster</h3>
+            <p class="portfolio-item-desc">Beverage brand promotional design</p>
+          </div>
+        </div>
+
+        <!-- Row 2 -->
+        <!-- Poster 4: Premium Burger -->
+        <div class="portfolio-item reveal-scale delay-1" data-category="design" id="work-4">
+          <img src="assets/images/poster4.jpg" alt="Premium Quality Burger — Food Poster Design">
+          <div class="portfolio-overlay">
+            <span class="portfolio-item-tag">Poster Design</span>
+            <h3 class="portfolio-item-title">Premium Burger Poster</h3>
+            <p class="portfolio-item-desc">Premium food brand visual design</p>
+          </div>
+        </div>
+
+        <!-- Poster 5: Be The King of Your Craft -->
+        <div class="portfolio-item reveal-scale delay-2" data-category="design" id="work-5">
+          <img src="assets/images/poster5.jpg" alt="Be The King of Your Craft — Motivational Design Poster">
+          <div class="portfolio-overlay">
+            <span class="portfolio-item-tag">Creative Design</span>
+            <h3 class="portfolio-item-title">King of Your Craft</h3>
+            <p class="portfolio-item-desc">Motivational creative design poster</p>
+          </div>
+        </div>
+
+        <!-- Poster 6: Nescafé Red Mug -->
+        <div class="portfolio-item reveal-scale delay-3" data-category="design" id="work-6">
+          <img src="assets/images/poster6.jpg" alt="Nescafé Red Mug — Product Poster Design">
+          <div class="portfolio-overlay">
+            <span class="portfolio-item-tag">Product Design</span>
+            <h3 class="portfolio-item-title">Nescafé Product Poster</h3>
+            <p class="portfolio-item-desc">Product branding & visual design</p>
+          </div>
+        </div>
+
+        <!-- Video 1 -->
+        <div class="portfolio-item video-item reveal-scale" data-category="video" id="work-video-1">
+          <video src="assets/videos/video1.mp4" muted loop preload="metadata"></video>
+          <div class="play-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+          </div>
+          <div class="portfolio-overlay">
+            <span class="portfolio-item-tag">Video Editing</span>
+            <h3 class="portfolio-item-title">Video Project 01</h3>
+            <p class="portfolio-item-desc">Video editing & motion graphics</p>
+          </div>
+        </div>
+
+        <!-- Video 2 -->
+        <div class="portfolio-item video-item reveal-scale delay-1" data-category="video" id="work-video-2">
+          <video src="assets/videos/video2.mp4" muted loop preload="metadata"></video>
+          <div class="play-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+          </div>
+          <div class="portfolio-overlay">
+            <span class="portfolio-item-tag">Video Editing</span>
+            <h3 class="portfolio-item-title">Video Project 02</h3>
+            <p class="portfolio-item-desc">Video editing & motion graphics</p>
+          </div>
+        </div>
+
+        <!-- Video 3 -->
+        <div class="portfolio-item video-item reveal-scale delay-2" data-category="video" id="work-video-3">
+          <video src="assets/videos/video3.mp4" muted loop preload="metadata"></video>
+          <div class="play-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+          </div>
+          <div class="portfolio-overlay">
+            <span class="portfolio-item-tag">Motion Graphics</span>
+            <h3 class="portfolio-item-title">Video Project 03</h3>
+            <p class="portfolio-item-desc">Motion graphics & visual effects</p>
+          </div>
+        </div>
+
+        <!-- Video 4 -->
+        <div class="portfolio-item video-item reveal-scale delay-1" data-category="video" id="work-video-4">
+          <video src="assets/videos/video4.mp4" muted loop preload="metadata"></video>
+          <div class="play-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+          </div>
+          <div class="portfolio-overlay">
+            <span class="portfolio-item-tag">Video Editing</span>
+            <h3 class="portfolio-item-title">Video Project 04</h3>
+            <p class="portfolio-item-desc">Cinematic video editing</p>
+          </div>
+        </div>
+
+        <!-- Video 5 -->
+        <div class="portfolio-item video-item reveal-scale delay-2" data-category="video" id="work-video-5">
+          <video src="assets/videos/video5.mp4" muted loop preload="metadata"></video>
+          <div class="play-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+          </div>
+          <div class="portfolio-overlay">
+            <span class="portfolio-item-tag">Motion Graphics</span>
+            <h3 class="portfolio-item-title">Video Project 05</h3>
+            <p class="portfolio-item-desc">Motion graphics & transitions</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT SECTION ========== -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">Get in Touch</div>
+        <h2 class="section-title">Let's <span class="accent">Work Together</span></h2>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info reveal-left">
+          <h3>Have a project in mind?<br>Let's create something amazing.</h3>
+          <p>
+            I'm always open to new opportunities and collaborations. Whether you need a stunning 
+            poster, a complete brand identity, or a captivating video — I'd love to hear about your project.
+          </p>
+
+          <div class="contact-detail">
+            <div class="contact-detail-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </div>
+            <div>
+              <div class="contact-detail-label">Email</div>
+              <div class="contact-detail-text">ghbabu2003@gmail.com</div>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="contact-detail-icon">
+              <!-- Phone icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+              </svg>
+            </div>
+            <div>
+              <div class="contact-detail-label">Phone</div>
+              <div class="contact-detail-text">+91 9361548803</div>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="contact-detail-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+            </div>
+            <div>
+              <div class="contact-detail-label">Location</div>
+              <div class="contact-detail-text">Tamilnadu, India.</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <form class="contact-form reveal-right" id="contactForm">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Your full name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="your@email.com" required>
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" placeholder="Project subject">
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" placeholder="Tell me about your project..." required></textarea>
+          </div>
+          <button type="submit" class="btn-submit" id="submitBtn">
+            <span>Send Message</span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer" id="footer">
+    <div class="container footer-inner">
+      <p class="footer-text">&copy; 2026 Harishbabu. All rights reserved.</p>
+      <div class="footer-back-top" id="backToTop">
+        <span>Back to Top</span>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="12" y1="19" x2="12" y2="5"></line>
+          <polyline points="5 12 12 5 19 12"></polyline>
+        </svg>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>
